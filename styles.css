@@ -124,6 +124,12 @@ p:first-of-type{
     font-weight: bold;
 }
 img{
+    /*--Float image and distance from text--*/
     width: 40%;
+    margin: 5%;
     float: right;
+}
+html{
+    /*--Change Font of the document to Open Sans--*/
+    font-family: 'OpenSans',cursive;
 }
