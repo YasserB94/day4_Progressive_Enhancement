@@ -20,24 +20,22 @@
     --clr-txt--good:green;
     --clr-txt--bad:red;
     --clr-txt--maybe:orange;
-
-
-
-
-
 }
 html,body{
     /*--Add Open sans font with serif fallback--*/
     font-family: var(--ff--Opensans);
+    /*--Add Spacing between letters to imporve font readability--*/
+    letter-spacing: .01rem;
     /*--Basic easy to read size--*/ 
     font-size: 1rem;
     /*--Dark text color, not black--*/
-    color: var(--clr--black);
+    color: var(--clr-txt--base);
     /*--Add background color--*/
     background-color: var(--clr--pink);
+    
 
 }
-/*---Styling for Good bad and Maybe--*/
+/*---Text Styling--*/
 .good{
     font-style: normal;
     color: var(--clr-txt--good);
@@ -49,4 +47,11 @@ color: var(--clr-txt--bad);
 .maybe{
     font-style: normal;
     color: var(--clr-txt--maybe);    
+}
+q{
+    font-style: italic;
+}
+q em{
+    /*Make all em in quotes italic anyway*/
+    font-style: italic!important;
 }
