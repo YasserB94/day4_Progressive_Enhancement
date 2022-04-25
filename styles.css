@@ -123,3 +123,7 @@ p:first-of-type{
     /*--Put the first paragraph in bold--*/
     font-weight: bold;
 }
+img{
+    width: 40%;
+    float: right;
+}
