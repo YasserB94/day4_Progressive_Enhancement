@@ -31,7 +31,7 @@ a:before {
     border-color: black;
     border-width: 1px;
     padding: .25rem;
-    width: 100%;
+    width: 110%;
     /*--Position tool tip under link in the left hand corner--*/
     top: 105%;
     left: 0%;
@@ -91,4 +91,35 @@ q.neighbours{
 -*/
 header > h1{
     background-color: yellow;
+}
+/*--Exercise--*/
+/*--Capitalize all instances of the words "good" and "bad".
+Put the words "Bad" in red
+Put the words "Good" in green
+Style the table so that the background color of each row is alternating grey or white
+Put the first paragraph in bold--*/
+em.good,em.bad{
+    /*--Capitalise all instances of the words good and bad--*/
+    text-transform: uppercase;
+}
+em.bad{
+    /*--Put the words bad in red--*/
+    color: red;
+}
+em.good{
+    /*--Put the words Good in green--*/
+    color: green;
+}
+
+tr:nth-child(even){
+    /*--Alternate each row grey/white - All even rows grey--*/
+    background-color: grey;
+}
+tr:nth-child(odd){
+        /*--Alternate each row grey/white - All odd rows white--*/
+    background-color: white;
+}
+p:first-of-type{
+    /*--Put the first paragraph in bold--*/
+    font-weight: bold;
 }
