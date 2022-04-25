@@ -4,6 +4,11 @@
     padding: 0%;
     z-index: 500;
 }
+:root{
+    /*---Colors--*/
+    --clr--farmer:#E0ff4f;
+    --clr--villagers:#a51080;
+}
 /*--EXERCISE CSS--*/
 /*--Find the attribute to display a small text box when hovering over links, like this:--*/
 a {
@@ -43,6 +48,7 @@ a:hover:before{
     visibility: visible;
     opacity: 1;
 }
+/*--EXERCISE--*/
 /*--Give body max width of 90%
     Center body by using Margin
     Add background image to body
@@ -63,4 +69,20 @@ body{
     background-position: right bottom;
     /*--Change size to cover--*/
     background-size: cover;
+}
+/*--EXERCISE--*/
+/*--Using only the tag as a selector, italicize all quotations.
+Identify the quotes of the villagers and the farmer by assigning each a corresponding class.
+Change the color of the quotes according to the person speaking.--*/
+q,blockquote{
+    /*--Make all Quotations italic--*/
+    font-style: italic;
+}
+q.farmer{
+    /*--Assign color to farmer--*/
+    color: var(--clr--farmer);
+}
+q.neighbours{
+    /*--Assign color to villagers--*/
+    color: var(--clr--villagers);
 }
