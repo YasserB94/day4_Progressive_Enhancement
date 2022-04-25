@@ -86,3 +86,9 @@ q.neighbours{
     /*--Assign color to villagers--*/
     color: var(--clr--villagers);
 }
+/*--EXERCISE--*/
+/*-Select an element of the header and gives it a yellow background (use the child selector)
+-*/
+header > h1{
+    background-color: yellow;
+}
