@@ -7,5 +7,46 @@
 }
 :root{
 /*--THEME--*/
+    /*--FONTS--*/
+    --ff--Opensans:OpenSans,serif;
+    --ff--OpensansItalic:OpenSansItalic,serif;
 
+    /*--Colors--*/
+    --clr-txt--base:#495159;
+    --clr-primary:orange;
+    --clr-secondary:yellow;
+
+
+    --clr-txt--good:green;
+    --clr-txt--bad:red;
+    --clr-txt--maybe:orange;
+
+
+
+
+
+}
+html,body{
+    /*--Add Open sans font with serif fallback--*/
+    font-family: var(--ff--Opensans);
+    /*--Basic easy to read size--*/ 
+    font-size: 1rem;
+    /*--Dark text color, not black--*/
+    color: var(--clr--black);
+    /*--Add background color--*/
+    background-color: var(--clr--pink);
+
+}
+/*---Styling for Good bad and Maybe--*/
+.good{
+    font-style: normal;
+    color: var(--clr-txt--good);
+}
+.bad{
+    font-style: normal;
+color: var(--clr-txt--bad);
+}
+.maybe{
+    font-style: normal;
+    color: var(--clr-txt--maybe);    
 }
