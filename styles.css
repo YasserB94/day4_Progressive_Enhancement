@@ -8,8 +8,8 @@
 :root{
 /*--THEME--*/
     /*--FONTS--*/
-    --ff--Opensans:OpenSans,serif;
-    --ff--OpensansItalic:OpenSansItalic,serif;
+    --ff--Opensans:'OpenSans',serif;
+    --ff--OpensansItalic:'OpenSansItalic',serif;
 
     /*--Colors--*/
     --clr-txt--base:#495159;
@@ -22,10 +22,6 @@
     --clr-txt--maybe:orange;
 }
 html,body{
-    /*--Add Open sans font with serif fallback--*/
-    font-family: var(--ff--Opensans);
-    /*--Add Spacing between letters to imporve font readability--*/
-    letter-spacing: .01rem;
     /*--Basic easy to read size--*/ 
     font-size: 1rem;
     /*--Dark text color, not black--*/
@@ -36,6 +32,12 @@ html,body{
 
 }
 /*---Text Styling--*/
+p{
+        /*--Add Open sans font with serif fallback--*/
+        font-family: var(--ff--Opensans);
+        /*--Add Spacing between letters to imporve font readability--*/
+        letter-spacing: .01rem;
+}
 .good{
     font-style: normal;
     color: var(--clr-txt--good);
@@ -48,10 +50,12 @@ color: var(--clr-txt--bad);
     font-style: normal;
     color: var(--clr-txt--maybe);    
 }
+/*--Make quotes stand out from paragraphs--*/
 q{
     font-style: italic;
 }
 q em{
     /*Make all em in quotes italic anyway*/
+    
     font-style: italic!important;
 }
