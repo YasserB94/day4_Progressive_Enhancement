@@ -8,33 +8,37 @@
 :root{
 /*--THEME--*/
     /*--FONTS--*/
-    --ff--Opensans:'OpenSans',serif;
-    --ff--OpensansItalic:'OpenSansItalic',serif;
-
+    --ff--Paragraphs:'OpenSans',serif;
+    --ff--Quotes:'Courier New', Courier, monospace;
+    --ff--QuoteBlocks:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /*--Colors--*/
-    --clr-txt--base:#495159;
-    --clr-primary:orange;
-    --clr-secondary:yellow;
+        /*--Theme Colors--*/
 
 
-    --clr-txt--good:green;
-    --clr-txt--bad:red;
-    --clr-txt--maybe:orange;
+        --clr--primary:#FFC482;
+        --clr--secondary:#496A81;
+        --clr--highlight:#66999B;
+        --clr--background:#2B3A67;
+        /*--GrayScale--*/
+        --clr--white:#FCFCFC;
+        --clr--gray--100:#5D737E;
+        --clr-gray--300:#495159;
+        --clr--gray--400:#3F4045;
+        --clr--gray--900:#30292F;
+        --clr--black:#02111B;
 }
 html,body{
     /*--Basic easy to read size--*/ 
     font-size: 1rem;
-    /*--Dark text color, not black--*/
-    color: var(--clr-txt--base);
     /*--Add background color--*/
-    background-color: var(--clr--pink);
-    
-
+    background-color: var(--clr--background);
+    color: var(--clr--primary);
 }
+
 /*---Text Styling--*/
 p{
         /*--Add Open sans font with serif fallback--*/
-        font-family: var(--ff--Opensans);
+        font-family: var(--ff--Paragraphs);
         /*--Add Spacing between letters to imporve font readability--*/
         letter-spacing: .01rem;
 }
@@ -53,9 +57,13 @@ color: var(--clr-txt--bad);
 /*--Make quotes stand out from paragraphs--*/
 q{
     font-style: italic;
+    font-family: var(--ff--Quotes)
 }
 q em{
     /*Make all em in quotes italic anyway*/
-    
     font-style: italic!important;
+}
+blockquote{
+    /*--Make quoteBlock Font stant out--*/
+    font-family: var(--ff--QuoteBlocks);
 }
