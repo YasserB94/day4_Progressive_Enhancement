@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    z-index: 500;
+    background-color: burlywood;
+}
+
+/*--EXERCISE CSS--*/
+/*--Find the attribute to display a small text box when hovering over links, like this:--*/
+a {
+    /*--Make relative so Tooltip can position relative to link--*/
+    position: relative;
+}
+/*--Create ToolTip--*/
+a:before {
+    /*--Add Tooltip content--*/
+    content: attr(data-hover);
+    /*--Add Z-Index to hover over other element--*/
+    z-index: 501;
+    /*--Position absolute so it doesn't interfere with other elements--*/
+    position: absolute;
+
+    /*--Design little box for tooltip--*/
+    background-color: white;
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+    padding: .25rem;
+    width: 100%;
+    /*--Position tool tip under link in the left hand corner--*/
+    top: 105%;
+    left: 0%;
+    /*--hide the box by default--*/
+    opacity: 0;
+    visibility: hidden;
+    /*--Add Transition--*/
+    transition: opacity .8s ease-in;
+
+}
+/*--Trigger tooltip visibilty on hover--*/
+a:hover:before{
+    /*--Change visibilty of tooltip on link hover--*/
+    visibility: visible;
+    opacity: 1;
+}
