@@ -2,13 +2,8 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-}
-
-body {
     z-index: 500;
-    background-color: burlywood;
 }
-
 /*--EXERCISE CSS--*/
 /*--Find the attribute to display a small text box when hovering over links, like this:--*/
 a {
@@ -47,4 +42,25 @@ a:hover:before{
     /*--Change visibilty of tooltip on link hover--*/
     visibility: visible;
     opacity: 1;
+}
+/*--Give body max width of 90%
+    Center body by using Margin
+    Add background image to body
+    Make sure image does not repeat itself
+    Change image positioning to bottom right
+    Change it's size to cover
+    --*/
+body{
+    /*--Max width--*/
+    max-width: 90%;
+    /*--Center with margins--*/
+    margin: 0 auto;
+    /*--Add background image--*/
+    background-image: url(./assets/images/background.jpg);
+    /*--Disable repeat--*/
+    background-repeat: no-repeat;
+    /*--Position on bottom right--*/
+    background-position: right bottom;
+    /*--Change size to cover--*/
+    background-size: cover;
 }
